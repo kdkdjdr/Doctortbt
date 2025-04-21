@@ -1,93 +1,92 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doctortbt</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctortbt - محمد محمود</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #000;
+      direction: rtl;
+      background-color: #111;
       color: white;
+      overflow-x: hidden;
+    }
+    .container {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
       height: 100vh;
-      overflow: hidden;
+      padding: 0 5%;
     }
     .left {
-      width: 50%;
-      background-color: #1a1a1a;
-      padding: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .left .social {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-    .left .social a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
+      max-width: 45%;
     }
     .left h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    .left h2 {
-      font-size: 28px;
-      line-height: 1.6;
-      font-weight: bold;
+      font-size: 40px;
+      margin: 0;
+      line-height: 1.2;
     }
     .left p {
       color: #ccc;
       margin-top: 20px;
+      font-size: 15px;
+    }
+    .links {
+      margin-bottom: 20px;
+    }
+    .links span {
+      margin-left: 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
     }
     .right {
-      width: 50%;
-      background: #000 url('your-image-name.png') no-repeat center center / contain;
       position: relative;
     }
-    .circle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 400px;
-      height: 400px;
-      background: red;
+    .profile-img {
+      width: 350px;
+      height: auto;
       border-radius: 50%;
-      z-index: 0;
+      box-shadow: 0 0 60px #f00;
     }
-    .right img {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      height: 100%;
-      z-index: 1;
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 40px 20px;
+      }
+      .left, .right {
+        max-width: 100%;
+      }
+      .profile-img {
+        width: 250px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="left">
-    <div class="social">
-      <a href="https://wa.me/201100149606">واتساب</a>
-      <a href="https://instagram.com">انستجرام</a>
-      <a href="https://t.me">تيليجرام</a>
+  <div class="container">
+    <div class="left">
+      <div class="links">
+        <span>واتساب</span>
+        <span>انستجرام</span>
+        <span>تيليجرام</span>
+      </div>
+      <h1>
+        دكتور<br>
+        تي بي<br>
+        محمد محمود<br>
+        مهنـدس كمبيوتر
+      </h1>
+      <p>
+        انا تخصصي برمجة، يعني عارف امتى اخليك Input وامتى اخليك Output.
+      </p>
     </div>
-    <h1>Doctortbt</h1>
-    <h2>MOHAMED<br />MAHMOUD<br />COMPUTER<br />ENGINEER</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ab architecto blanditiis nam similique non.</p>
-  </div>
-  <div class="right">
-    <div class="circle"></div>
-    <img src="your-image-name.png" alt="Mohamed Mahmoud">
+    <div class="right">
+      <img src="your-image.png" alt="محمد محمود" class="profile-img">
+    </div>
   </div>
 </body>
 </html>
