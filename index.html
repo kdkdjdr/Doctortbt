@@ -1,66 +1,93 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doctortbt</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: Arial, sans-serif;
-      background-color: #111;
+      background-color: #000;
       color: white;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
       height: 100vh;
-      padding: 0 5%;
+      overflow: hidden;
     }
     .left {
-      max-width: 50%;
+      width: 50%;
+      background-color: #1a1a1a;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .left h1 {
-      font-size: 2.5em;
-      margin: 0;
+    .left .social {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
     }
-    .left h2 {
-      font-size: 1.5em;
-      font-weight: bold;
-      line-height: 1.4;
-    }
-    .left p {
-      font-size: 1em;
-      color: #ccc;
-    }
-    .links {
-      margin: 20px 0;
-    }
-    .links a {
-      display: block;
+    .left .social a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      margin-bottom: 8px;
-      font-size: 1em;
+      font-size: 16px;
+    }
+    .left h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .left h2 {
+      font-size: 28px;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+    .left p {
+      color: #ccc;
+      margin-top: 20px;
+    }
+    .right {
+      width: 50%;
+      background: #000 url('your-image-name.png') no-repeat center center / contain;
+      position: relative;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 400px;
+      background: red;
+      border-radius: 50%;
+      z-index: 0;
     }
     .right img {
-      max-height: 80vh;
-      border-radius: 20px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: 1;
     }
   </style>
 </head>
 <body>
   <div class="left">
-    <div class="links">
+    <div class="social">
       <a href="https://wa.me/201100149606">واتساب</a>
-      <a href="https://www.instagram.com/251._.m?igsh=bXpoeDBzNndlbDM=">انستجرام</a>
-      <a href="https://DoctorTBT.com">تيليجرام</a>
+      <a href="https://instagram.com">انستجرام</a>
+      <a href="https://t.me">تيليجرام</a>
     </div>
     <h1>Doctortbt</h1>
-    <h2>MOHAMED MAHMOUD<br>COMPUTER ENGINEER</h2>
+    <h2>MOHAMED<br />MAHMOUD<br />COMPUTER<br />ENGINEER</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ab architecto blanditiis nam similique non.</p>
   </div>
   <div class="right">
-    <img src="mohamed_mahmoud.png" alt="Mohamed Mahmoud" />
+    <div class="circle"></div>
+    <img src="your-image-name.png" alt="Mohamed Mahmoud">
   </div>
 </body>
 </html>
