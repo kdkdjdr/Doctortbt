@@ -7,81 +7,60 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #111;
+      background-color: #111;
       color: white;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       height: 100vh;
+      padding: 0 5%;
     }
-    .container {
-      display: flex;
-      background: #222;
-      padding: 20px;
-      border-radius: 15px;
-      overflow: hidden;
-      max-width: 900px;
-      width: 100%;
+    .left {
+      max-width: 50%;
     }
-    .text {
-      flex: 1;
-      padding: 20px;
-    }
-    .text h1 {
+    .left h1 {
+      font-size: 2.5em;
       margin: 0;
-      font-size: 28px;
-      color: white;
     }
-    .text h2 {
-      font-size: 22px;
-      line-height: 1.5;
-      color: white;
-    }
-    .text p {
-      color: #ccc;
-      margin-top: 15px;
-    }
-    .image-section {
-      position: relative;
-    }
-    .image-section img {
-      max-width: 300px;
-      border-radius: 10px;
-    }
-    .buttons {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .buttons a {
-      background: white;
-      color: #000;
-      padding: 8px 12px;
-      text-decoration: none;
-      border-radius: 5px;
+    .left h2 {
+      font-size: 1.5em;
       font-weight: bold;
-      text-align: center;
+      line-height: 1.4;
+    }
+    .left p {
+      font-size: 1em;
+      color: #ccc;
+    }
+    .links {
+      margin: 20px 0;
+    }
+    .links a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 8px;
+      font-size: 1em;
+    }
+    .right img {
+      max-height: 80vh;
+      border-radius: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="text">
-      <h1>Doctortbt</h1>
-      <h2>MOHAMED<br>MAHMOUD<br>COMPUTER<br>ENGINEER</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ab architecto blanditiis nam similique non.</p>
+  <div class="left">
+    <div class="links">
+      <a href="https://wa.me/201100149606">واتساب</a>
+      <a href="https://www.instagram.com/251._.m?igsh=bXpoeDBzNndlbDM=">انستجرام</a>
+      <a href="https://DoctorTBT.com">تيليجرام</a>
     </div>
-    <div class="image-section">
-      <img src="your-image.png" alt="Mohamed Mahmoud" />
-      <div class="buttons">
-        <a href="https://wa.me/201100149606" target="_blank">واتساب</a>
-        <a href="https://www.instagram.com/251._.m?igsh=bXpoeDBzNndlbDM=" target="_blank">انستجرام</a>
-        <a href="https://DoctorTBT.com" target="_blank">تليجرام</a>
-      </div>
-    </div>
+    <h1>Doctortbt</h1>
+    <h2>MOHAMED MAHMOUD<br>COMPUTER ENGINEER</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ab architecto blanditiis nam similique non.</p>
+  </div>
+  <div class="right">
+    <img src="mohamed_mahmoud.png" alt="Mohamed Mahmoud" />
   </div>
 </body>
 </html>
